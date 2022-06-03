@@ -5,4 +5,3 @@
 
 ## Tech
 * Firebase REST API
-* Swift UIKit# TarotCard-iOS
