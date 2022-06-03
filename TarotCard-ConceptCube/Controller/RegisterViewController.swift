@@ -80,6 +80,8 @@ class RegisterViewController: UIViewController {
     //MARK: - Button processing
     @IBAction func checkButtonPressed(_ sender: UIButton) {
         if userIDTextField.text != "" {
+            let alert = UIAlertController(title: "Checking...", message: nil, preferredStyle: .alert)
+            self.present(alert, animated: true)
             userManager.checkUserID(userID: userIDTextField.text!)
         } else {
             showAlert(title: "Empty User ID", message: "Please fill in User ID Field.", buttonTitle: "Done")
@@ -89,8 +91,7 @@ class RegisterViewController: UIViewController {
     @IBAction func joinButtonPressed(_ sender: UIButton) {
         if passwordTextField.text != repassTextField.text {
             showAlert(title: "Password does not matched.", message: nil, buttonTitle: "Done")
-        }
-        if userIDTextField.text != "" &&
+        } else if userIDTextField.text != "" &&
             passwordTextField.text != "" &&
             repassTextField.text != "" &&
             emailTextField.text != "" &&
@@ -103,6 +104,7 @@ class RegisterViewController: UIViewController {
                 view.endEditing(true)
                 let alert = UIAlertController(title: "Join...", message: nil, preferredStyle: .alert)
                 self.present(alert, animated: false)
+                isVerified = false
                 userManager.userSignUp(userID: userIDTextField.text!, password: passwordTextField.text!, email: emailTextField.text!, birthday: birthdayTextField.text!)
             }
         }
@@ -117,6 +119,7 @@ class RegisterViewController: UIViewController {
     
     func showAlert(title: String, message: String?, buttonTitle: String) {
         self.dismiss(animated: true)
+        print ("dismiss")
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: buttonTitle, style: .default))
         self.present(alert, animated: true)
@@ -154,6 +157,7 @@ extension RegisterViewController: UserManagerQueryDelegate {
         } else {
             isVerified = true
             DispatchQueue.main.async {
+                self.dismiss(animated: true)
                 self.checkButton.backgroundColor = .systemGreen
                 self.checkButton.layer.cornerRadius = 5
                 self.checkButton.tintColor = .white
