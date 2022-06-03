@@ -1,6 +1,6 @@
 # Tarot Card App
 ## Features
-* User Authorization
+* User Authentication
 * Tarot Card Shuffle
 
 ## Tech
