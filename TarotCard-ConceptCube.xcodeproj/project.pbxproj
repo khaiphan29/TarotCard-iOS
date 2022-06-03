@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		781B3D442849E36700645238 /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781B3D432849E36700645238 /* CardManager.swift */; };
+		781B3D462849E52800645238 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 781B3D452849E52800645238 /* src */; };
+		785C46492848962C004BAA1A /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C46482848962C004BAA1A /* FirebaseModel.swift */; };
+		785C464C2848969F004BAA1A /* UserAuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C464B2848969F004BAA1A /* UserAuthData.swift */; };
+		785C464E28489771004BAA1A /* UserDocQueryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C464D28489771004BAA1A /* UserDocQueryData.swift */; };
+		785C46502848AC7C004BAA1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C464F2848AC7C004BAA1A /* RegisterViewController.swift */; };
+		785C46522848C470004BAA1A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C46512848C470004BAA1A /* UserManager.swift */; };
+		785C465428491720004BAA1A /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C465328491720004BAA1A /* MessageData.swift */; };
+		785C465628492B05004BAA1A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C465528492B05004BAA1A /* MainViewController.swift */; };
+		785C46582849C74C004BAA1A /* MainSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C46572849C74C004BAA1A /* MainSwiftUIView.swift */; };
+		78C53DDB2847D5D8005D2E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C53DDA2847D5D8005D2E45 /* AppDelegate.swift */; };
+		78C53DDD2847D5D8005D2E45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C53DDC2847D5D8005D2E45 /* SceneDelegate.swift */; };
+		78C53DDF2847D5D8005D2E45 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C53DDE2847D5D8005D2E45 /* WelcomeViewController.swift */; };
+		78C53DE22847D5D8005D2E45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C53DE02847D5D8005D2E45 /* Main.storyboard */; };
+		78C53DE42847D5DA005D2E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C53DE32847D5DA005D2E45 /* Assets.xcassets */; };
+		78C53DE72847D5DA005D2E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C53DE52847D5DA005D2E45 /* LaunchScreen.storyboard */; };
+		78C53DF12847D7BF005D2E45 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C53DF02847D7BF005D2E45 /* Constant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		781B3D432849E36700645238 /* CardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManager.swift; sourceTree = "<group>"; };
+		781B3D452849E52800645238 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		785C46482848962C004BAA1A /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		785C464B2848969F004BAA1A /* UserAuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthData.swift; sourceTree = "<group>"; };
+		785C464D28489771004BAA1A /* UserDocQueryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDocQueryData.swift; sourceTree = "<group>"; };
+		785C464F2848AC7C004BAA1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		785C46512848C470004BAA1A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		785C465328491720004BAA1A /* MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
+		785C465528492B05004BAA1A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		785C46572849C74C004BAA1A /* MainSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSwiftUIView.swift; sourceTree = "<group>"; };
+		78C53DD72847D5D8005D2E45 /* TarotCard-ConceptCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TarotCard-ConceptCube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C53DDA2847D5D8005D2E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78C53DDC2847D5D8005D2E45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78C53DDE2847D5D8005D2E45 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		78C53DE12847D5D8005D2E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78C53DE32847D5DA005D2E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78C53DE62847D5DA005D2E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78C53DE82847D5DA005D2E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78C53DF02847D7BF005D2E45 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78C53DD42847D5D8005D2E45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		785C464A2848963E004BAA1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				785C46482848962C004BAA1A /* FirebaseModel.swift */,
+				785C464B2848969F004BAA1A /* UserAuthData.swift */,
+				785C464D28489771004BAA1A /* UserDocQueryData.swift */,
+				785C46512848C470004BAA1A /* UserManager.swift */,
+				785C465328491720004BAA1A /* MessageData.swift */,
+				781B3D432849E36700645238 /* CardManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78C53DCE2847D5D8005D2E45 = {
+			isa = PBXGroup;
+			children = (
+				78C53DD92847D5D8005D2E45 /* TarotCard-ConceptCube */,
+				78C53DD82847D5D8005D2E45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78C53DD82847D5D8005D2E45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C53DD72847D5D8005D2E45 /* TarotCard-ConceptCube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78C53DD92847D5D8005D2E45 /* TarotCard-ConceptCube */ = {
+			isa = PBXGroup;
+			children = (
+				78C53DDA2847D5D8005D2E45 /* AppDelegate.swift */,
+				78C53DDC2847D5D8005D2E45 /* SceneDelegate.swift */,
+				785C464A2848963E004BAA1A /* Model */,
+				78C53DEE2847D5E6005D2E45 /* View */,
+				78C53DEF2847D5ED005D2E45 /* Controller */,
+				78C53DE32847D5DA005D2E45 /* Assets.xcassets */,
+				78C53DE52847D5DA005D2E45 /* LaunchScreen.storyboard */,
+				78C53DE82847D5DA005D2E45 /* Info.plist */,
+				78C53DF02847D7BF005D2E45 /* Constant.swift */,
+				781B3D452849E52800645238 /* src */,
+			);
+			path = "TarotCard-ConceptCube";
+			sourceTree = "<group>";
+		};
+		78C53DEE2847D5E6005D2E45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78C53DE02847D5D8005D2E45 /* Main.storyboard */,
+				785C46572849C74C004BAA1A /* MainSwiftUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78C53DEF2847D5ED005D2E45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78C53DDE2847D5D8005D2E45 /* WelcomeViewController.swift */,
+				785C464F2848AC7C004BAA1A /* RegisterViewController.swift */,
+				785C465528492B05004BAA1A /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78C53DD62847D5D8005D2E45 /* TarotCard-ConceptCube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C53DEB2847D5DA005D2E45 /* Build configuration list for PBXNativeTarget "TarotCard-ConceptCube" */;
+			buildPhases = (
+				78C53DD32847D5D8005D2E45 /* Sources */,
+				78C53DD42847D5D8005D2E45 /* Frameworks */,
+				78C53DD52847D5D8005D2E45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TarotCard-ConceptCube";
+			productName = "TarotCard-ConceptCube";
+			productReference = 78C53DD72847D5D8005D2E45 /* TarotCard-ConceptCube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78C53DCF2847D5D8005D2E45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					78C53DD62847D5D8005D2E45 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 78C53DD22847D5D8005D2E45 /* Build configuration list for PBXProject "TarotCard-ConceptCube" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78C53DCE2847D5D8005D2E45;
+			productRefGroup = 78C53DD82847D5D8005D2E45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78C53DD62847D5D8005D2E45 /* TarotCard-ConceptCube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78C53DD52847D5D8005D2E45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C53DE72847D5DA005D2E45 /* LaunchScreen.storyboard in Resources */,
+				78C53DE42847D5DA005D2E45 /* Assets.xcassets in Resources */,
+				78C53DE22847D5D8005D2E45 /* Main.storyboard in Resources */,
+				781B3D462849E52800645238 /* src in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78C53DD32847D5D8005D2E45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785C46522848C470004BAA1A /* UserManager.swift in Sources */,
+				785C465628492B05004BAA1A /* MainViewController.swift in Sources */,
+				78C53DDF2847D5D8005D2E45 /* WelcomeViewController.swift in Sources */,
+				785C46582849C74C004BAA1A /* MainSwiftUIView.swift in Sources */,
+				78C53DDB2847D5D8005D2E45 /* AppDelegate.swift in Sources */,
+				78C53DDD2847D5D8005D2E45 /* SceneDelegate.swift in Sources */,
+				78C53DF12847D7BF005D2E45 /* Constant.swift in Sources */,
+				785C465428491720004BAA1A /* MessageData.swift in Sources */,
+				785C46502848AC7C004BAA1A /* RegisterViewController.swift in Sources */,
+				785C464E28489771004BAA1A /* UserDocQueryData.swift in Sources */,
+				785C464C2848969F004BAA1A /* UserAuthData.swift in Sources */,
+				785C46492848962C004BAA1A /* FirebaseModel.swift in Sources */,
+				781B3D442849E36700645238 /* CardManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78C53DE02847D5D8005D2E45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C53DE12847D5D8005D2E45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78C53DE52847D5DA005D2E45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C53DE62847D5DA005D2E45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78C53DE92847D5DA005D2E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78C53DEA2847D5DA005D2E45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78C53DEC2847D5DA005D2E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TarotCard-ConceptCube/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.khairphan.TarotCard-ConceptCube";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78C53DED2847D5DA005D2E45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TarotCard-ConceptCube/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.khairphan.TarotCard-ConceptCube";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78C53DD22847D5D8005D2E45 /* Build configuration list for PBXProject "TarotCard-ConceptCube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C53DE92847D5DA005D2E45 /* Debug */,
+				78C53DEA2847D5DA005D2E45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C53DEB2847D5DA005D2E45 /* Build configuration list for PBXNativeTarget "TarotCard-ConceptCube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C53DEC2847D5DA005D2E45 /* Debug */,
+				78C53DED2847D5DA005D2E45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78C53DCF2847D5D8005D2E45 /* Project object */;
+}
