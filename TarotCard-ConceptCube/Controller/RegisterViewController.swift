@@ -100,6 +100,9 @@ class RegisterViewController: UIViewController {
                 showAlert(title: "Invalid User ID", message: "Make sure your ID is unique before join us\nClick on check button to verify", buttonTitle: "Done")
             }
             else {
+                view.endEditing(true)
+                let alert = UIAlertController(title: "Join...", message: nil, preferredStyle: .alert)
+                self.present(alert, animated: false)
                 userManager.userSignUp(userID: userIDTextField.text!, password: passwordTextField.text!, email: emailTextField.text!, birthday: birthdayTextField.text!)
             }
         }
@@ -113,6 +116,7 @@ class RegisterViewController: UIViewController {
     }
     
     func showAlert(title: String, message: String?, buttonTitle: String) {
+        self.dismiss(animated: true)
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: buttonTitle, style: .default))
         self.present(alert, animated: true)
@@ -157,18 +161,8 @@ extension RegisterViewController: UserManagerQueryDelegate {
         }
     }
     
-    //Complete Sign Up when the record that match email and user ID is created successfully
+    
     func didCreateDocument() {
-        DispatchQueue.main.async {
-            //self.navigationController?.popViewController(animated: true)
-            //self.showAlert(title: "Join Successfully !", message: nil, buttonTitle: "Done")
-            let alert = UIAlertController(title: "Join Successfully !", message: nil, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Done", style: .default) { uiAlertAction in
-                self.navigationController?.popViewController(animated: true)
-                self.view.endEditing(true)
-            })
-            self.present(alert, animated: true)
-        }
     }
     
     //After sign up successfully, create record that match user iD to email
@@ -182,6 +176,15 @@ extension RegisterViewController: UserManagerQueryDelegate {
 //MARK: - UserManagerAuthDelegate
 extension RegisterViewController: UserManagerAuthDelegate {
     func didSignUp() {
+        DispatchQueue.main.async {
+            self.dismiss(animated: true)
+            print("dismiss")
+            let alert = UIAlertController(title: "Join Successfully", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Done", style: .default) { uiAlertAction in
+                self.navigationController?.popViewController(animated: true)
+            })
+            self.present(alert, animated: true)
+        }
     }
     
     func didFailSignUp(with message: String) {

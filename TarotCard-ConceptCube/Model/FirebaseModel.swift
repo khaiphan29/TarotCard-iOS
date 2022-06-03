@@ -59,7 +59,7 @@ struct FireBaseModel {
                 //print(parseData)
                 delegate?.didFailSignUp(message: parseData.error.message)
             } catch {
-                print("complete sign up")
+                //print("complete sign up")
                 delegate?.didSignUpUser()
             }
         }

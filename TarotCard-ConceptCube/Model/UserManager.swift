@@ -38,6 +38,7 @@ class UserManager {
     static var currentUser: User?
     private var isCheckingUser = false
     private var isLoggingIn = false
+    private var isBindingUser = false
     
     private var firebaseModel = FireBaseModel(API_KEY: API_KEY, PROJECT_ID: PROJECT_ID)
     private var password: String?
@@ -89,6 +90,7 @@ class UserManager {
 extension UserManager: FirebaseModelDelegate {
     func didSignUpUser() {
         //Create record that match user ID to email
+        isBindingUser = true
         let recordJSON: [String: Any] = ["fields":[UserMatch.userIDField:["stringValue": userID!],
                                                    UserMatch.emailField:["stringValue": email!]]]
         firebaseModel.createDocument(in: UserMatch.name, json: recordJSON)
@@ -104,7 +106,6 @@ extension UserManager: FirebaseModelDelegate {
         self.email = nil
         self.password = nil
         self.userID = nil
-        authDelegate?.didSignUp()
     }
     
     func didFailSignUpWithError(error: Error?, httpResponse: HTTPURLResponse?) {
@@ -137,7 +138,11 @@ extension UserManager: FirebaseModelDelegate {
     }
     
     func didCreateDocument() {
-        queryDelegate?.didCreateDocument()
+        if isBindingUser {
+            print(isBindingUser)
+            authDelegate?.didSignUp()
+            isBindingUser = false
+        }
     }
     
     func didFailWithError(error: Error?, httpResponse: HTTPURLResponse?) {

@@ -53,6 +53,8 @@ class WelcomeViewController: UIViewController {
     }
     
     func login() {
+        let alert = UIAlertController(title: "Login...", message:nil, preferredStyle: .alert)
+        self.present(alert, animated: true)
         if userIDTextField.text != "" &&
             passwordTextField.text != "" {
             userManager.userLogin(userID: userIDTextField.text!, password: passwordTextField.text!)
@@ -63,6 +65,7 @@ class WelcomeViewController: UIViewController {
     }
     
     func showAlert(title: String, message: String?, buttonTitle: String) {
+        self.dismiss(animated: true)
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: buttonTitle, style: .default))
         self.present(alert, animated: true)
@@ -96,6 +99,7 @@ extension WelcomeViewController: UserManagerAuthDelegate {
     
     func didSignIn() {
         DispatchQueue.main.async {
+            self.dismiss(animated: true)
             self.performSegue(withIdentifier: SegueName.LoginToMain, sender: self)
             //let mainVC = UIHostingController(rootView: MainSwiftUIView())
             //self.present(mainVC, animated: true)
