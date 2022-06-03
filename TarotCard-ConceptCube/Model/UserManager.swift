@@ -139,7 +139,7 @@ extension UserManager: FirebaseModelDelegate {
     
     func didCreateDocument() {
         if isBindingUser {
-            print(isBindingUser)
+            //print(isBindingUser)
             authDelegate?.didSignUp()
             isBindingUser = false
         }

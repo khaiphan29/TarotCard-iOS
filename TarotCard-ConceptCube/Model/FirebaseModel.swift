@@ -125,7 +125,7 @@ struct FireBaseModel {
                 return
             }
             if let httpResponse = response as? HTTPURLResponse {
-                print(httpResponse.statusCode)
+                print("Create Doc HTTP Response: \(httpResponse.statusCode)")
             }
             delegate?.didCreateDocument()
         }
